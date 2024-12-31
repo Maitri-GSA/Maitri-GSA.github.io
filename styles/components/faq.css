@@ -1,0 +1,48 @@
+.faq__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.faq__box {
+    text-align: center;
+    padding: 2rem;
+    width: 450px;
+}
+
+.faq__box-title {
+    line-height: 1;
+}
+
+.faq__box-description {
+    margin-top: 1rem;
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .faq__box-title {
+        font-size: var(--size-lg);
+    }
+
+    .faq__box-description {
+        font-size: var(--size-base);
+        margin-top: 0.5rem;
+    }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

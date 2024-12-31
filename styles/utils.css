@@ -48,10 +48,11 @@ btn:focus-visible {
 
 .title {
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 1rem;
   font-family: var(--font-secondary);
   color: var(--clr-text);
-  font-size: var(--size-xs);
+  font-size: var(--size-sm);
 }
 
 /* xs */
