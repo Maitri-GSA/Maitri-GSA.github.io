@@ -1,3 +1,33 @@
+:root {
+  /* fonts */
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Source Code Pro", monospace;
+
+  /* colors */
+  --clr-dark: #101214; /* DarkNeutral-100 */
+
+  --clr-text: #ff817a; /* pastel red 1 */
+  --clr-light: #ff9a95; /* pastel red 4 */
+  --clr-a: #ffc1bd;/* pastel red 7 */
+
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +35,9 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-primary);
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 img,
@@ -29,4 +61,31 @@ button {
   background: none;
   cursor: pointer;
   color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.025em;
+}
+
+p {
+  color: var(--clr-text);
+}
+
+a {
+  color: var(--clr-a);
+}
+
+strong {
+  color: var(--clr-light);
+  font-weight: 900;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: solid var(--clr-light);
 }
